@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <title>Planning </title>
+</head>
+
+<body>
+<header id="Acceuil">
+  <!-- Logo de la bannière de l'iut de velizy-->
+    <img class="logo_bannière" src="photos/photo_bannière.PNG" alt="Logo bannière de l'iut de Velizy" />
+
+    <div class="barre">
+       
+    </div>   
+    <nav class="nav_bar"> <!-- Bar de naviguation du site-->
+    
+        <ul>
+            <li><a href="index_page_principal.html">Accueil</a></li>
+            <li><a href="index_page_planning.html">Planning</a></li>
+            <li><a href="index_page_risques.html">Risques</a></li>
+        </ul>
+    </nav>
+
+    <img class="menu_button" src="photos/menu_boutton.png" alt="Logo bannière de l'iut de Velizy" /> <!-- logo de la bar de naviguation pour les mobiles-->
+
+</header>
+
+<main>
+
+    <div class ="planning_global_conteneur"> 
+        <img  class="planning_global_image" src="photos/planning_travaux complet.png" alt="planning de tout les travaux">
+    </div>
+    
+</main>
+
+<footer>
+
+    
+    <div class="site-footer">
+        <div class="credits">
+            <p>Site créé par Vincent CARRET, Elijah et Blomkum &copy; 2023-2024</p>
+        </div>
+
+</footer>
+
+
+<script>
+    
+    const menuButton = document.querySelector(".menu_button")
+    const navBar = document.querySelector(".nav_bar") //lorsque l'utilisateur clique sur le boutton du menu pour mobile, ajoute classe mobile-menu lors du clic et supprime lors du deuxième.
+ 
+        menuButton.addEventListener('click',()=>{
+            navBar.classList.toggle('mobile-menu') })
+
+</script>
+
+</body>
+</html>

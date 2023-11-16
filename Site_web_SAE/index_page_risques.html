@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <title>Planning </title>
+</head>
+
+<body>
+<header id="Acceuil">
+  <!-- Logo de la bannière de l'iut de velizy-->
+    <img class="logo_bannière" src="photos/photo_bannière.PNG" alt="Logo bannière de l'iut de Velizy" />
+
+    <div class="barre">
+       
+    </div>   
+    <nav class="nav_bar"> <!-- Bar de naviguation du site-->
+    
+        <ul>
+            <li><a href="index_page_principal.html">Accueil</a></li>
+            <li><a href="index_page_planning.html">Planning</a></li>
+            <li><a href="index_page_risques.html">Risques</a></li>
+        </ul>
+    </nav>
+
+    <img class="menu_button" src="photos/menu_boutton.png" alt="Logo bannière de l'iut de Velizy" /> <!-- logo de la bar de naviguation pour les mobiles-->
+
+</header>
+
+<main>
+
+<div class="risques_box">
+
+    <h1>Risques engendrés des travaux :  </h1>
+        <p class="risques_texte">Au cours de certains travaux, notamment ceux liés à l'isolation thermique et sonore, il est envisageable que des portions, voire la totalité d'un bâtiment, deviennent inutilisables. Pour remédier à cette situation, le planning a été élaboré de manière à ce qu'un seul bâtiment au maximum soit impacté par l'indisponibilité résultant des travaux.
+
+
+        Étant donné l'ampleur des travaux de rénovation et d'installation nécessaires, le projet s'annonce à la fois prolongé dans le temps et exigeant sur le plan financier. Cependant, afin de minimiser la durée des travaux, le planning a été conçu de manière à superposer différentes tâches, tout en prévoyant des délais raisonnables pour leur réalisation, tout en permettant aux étudiants de suivre leurs cours.
+      
+        
+        Des interruptions potentielles dans l'approvisionnement en eau et en électricité sont à prévoir pendant les travaux. Cependant, ces interruptions seront planifiées de manière synchronisée avec l'indisponibilité des bâtiments, afin de ne pas perturber les activités des élèves et du personnel.
+        </p>
+    </div>
+</main>
+
+<footer>
+
+    
+    <div class="site-footer">
+        <div class="credits">
+            <p>Site créé par Vincent CARRET, Elijah et Blomkum &copy; 2023-2024</p>
+        </div>
+
+</footer>
+
+<script>
+    
+    const menuButton = document.querySelector(".menu_button")
+    const navBar = document.querySelector(".nav_bar") //lorsque l'utilisateur clique sur le boutton du menu pour mobile, ajoute classe mobile-menu lors du clic et supprime lors du deuxième.
+ 
+        menuButton.addEventListener('click',()=>{
+            navBar.classList.toggle('mobile-menu') })
+
+</script>
+
+</body>
+</html>

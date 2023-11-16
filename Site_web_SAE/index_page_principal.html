@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <title>Site Rénovation IUT Vélizy</title>
+</head>
+
+<body>
+<header id="Acceuil">
+  <!-- Logo de la bannière de l'iut de velizy-->
+    <img class="logo_bannière" src="photos/photo_bannière.PNG" alt="Logo bannière de l'iut de Velizy" />
+
+    <div class="barre">
+       
+    </div>
+  
+    
+
+   
+    <nav class="nav_bar"> <!-- Bar de naviguation du site-->
+    
+        <ul>
+            <li><a href="index_page_principal.html">Accueil</a></li>
+            <li><a href="index_page_planning.html">Planning </a></li>
+            <li><a href="index_page_risques.html">Risques</a></li>
+        </ul>
+    </nav>
+    
+    <img class="menu_button" src="photos/menu_boutton.png" alt="Logo bannière de l'iut de Velizy" /> <!-- logo de la bar de naviguation pour les mobiles-->
+
+    
+   
+</header>
+
+
+<main>
+
+    <div class="texte_haut_page">
+        <h1 class ="titre_page_principal">Objectif du projet :</h1>
+        <p> Nous avons un budget de 2 M d'euros pour refaire le site de l'IUT de Vélizy.</p>
+    </br>
+        <div class="typewriter"> 
+        <p> <strong> Cliquez sur les batiments ou vous voulez voir les travaux</strong></p>
+        </div>
+     </div> 
+
+
+    <img class="map" src="photos/map.PNG" usemap="#image_map">
+        <map name="image_map">
+        <area alt="Mermoz" title="Mermoz" href="index_batiment_mermoz.html" coords="364,165 352,304 648,340 663,193 " shape="polygon">
+        <area alt="Bastié" title="Bastié" href="index_batiment_bastié.html" coords="260,365 778,423 744,765 223,713 " shape="polygon">
+        <area alt="Garros" title="Garros" href="index_batiment_garros.html" coords="913,515 884,774 946,780 974,522 " shape="polygon">
+        <area alt="Ext1" title="Ext1" href="index_espace_ext.html" coords="949,331 937,435 965,461 1027,461 1072,443 1069,393 1067,368 1006,339 981,332 " shape="polygon">
+        <area alt="Ext2" title="Ext2" href="index_espace_ext.html" coords="1257,143 1249,199 1235,258 1212,307 1145,361 1131,380 1142,408 1176,439 1232,409 1274,345 1310,236 1290,162 1271,138 " shape="polygon">
+        <area alt="Ext3" title="Ext3" href="index_espace_ext.html" coords="791,515 770,752 857,788 885,761 891,640 904,526 853,505 " shape="polygon">
+    </map>
+
+
+    <div class= "contenu_texte"> 
+        <h2><u>Contraintes de rénovation pour l'IUT de Vélizy Rambouillet : </u></h2>
+        <br>
+
+    <ul>
+        <li>
+            <h3>Température des salles et qualité du chauffage :</h3>
+            <ul>
+                <li>Assurer une température adéquate dans toutes les salles tout au long de l'année.</li>
+                <li>Améliorer la qualité du chauffage pour garantir le confort des étudiants.</li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            <h3>Qualité de l'isolation :</h3>
+            <ul>
+                <li>Mettre en place une isolation efficace pour maintenir une température constante et réduire la consommation d'énergie.</li>
+                <li>Réduire le bruit entre les différentes salles.</li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            <h3>Problèmes d'accès à Internet dans certains bâtiments :</h3>
+            <ul>
+                <li>Mettre en place une infrastructure réseau fiable et performante dans tous les bâtiments.</li>
+                <li>Éliminer les zones sans accès à Internet.</li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            <h3>Absence d'ascenseurs et difficulté de déplacement entre les bâtiments :</h3>
+            <ul>
+                <li>Étudier la possibilité d'installer des ascenseurs ou d'autres solutions pour faciliter l'accessibilité verticale.</li>
+                <li>Améliorer la circulation entre les bâtiments pour faciliter les déplacements des étudiants.</li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            <h3>Mesures d'accessibilité pour les personnes handicapées :</h3>
+            <ul>
+                <li>Vérifier et renforcer les mesures d'accessibilité existantes.</li>
+                <li>S'assurer que tous les espaces sont conformes aux normes d'accessibilité pour les personnes handicapées.</li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            <h3>Espaces verts peu importants :</h3>
+            <ul>
+                <li>Évaluer la possibilité d'améliorer ou d'introduire des espaces verts pour créer un environnement plus agréable.</li>
+                <li>Considérer des solutions d'aménagement paysager pour rendre le campus plus attractif.</li>
+            </ul>
+        </li>
+        <br>
+    </ul>
+    </div>
+</main>
+
+<footer>
+
+    
+    <div class="site-footer">
+        <div class="credits">
+            <p>Site créé par Vincent CARRET, Elijah et Blomkum &copy; 2023-2024</p>
+        </div>
+
+</footer>
+
+
+<script src="MapResponsive.js"></script> <!-- Nous avons pris cette fonction sur github pour avoir la map de page d'acceuil qui est reponsive => reférence vidéo : https://www.youtube.com/watch?v=8wM5nBLy8c8-->
+<script>
+    imageMapResize();
+    const menuButton = document.querySelector(".menu_button")
+    const navBar = document.querySelector(".nav_bar") //lorsque l'utilisateur clique sur le boutton du menu pour mobile, ajoute classe mobile-menu lors du clic et supprime lors du deuxième.
+ 
+        menuButton.addEventListener('click',()=>{
+            navBar.classList.toggle('mobile-menu') })
+
+</script>
+
+
+
+</body>
+
+</html>

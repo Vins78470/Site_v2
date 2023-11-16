@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <title>Planning </title>
+</head>
+
+<body>
+<header id="Acceuil">
+  <!-- Logo de la bannière de l'iut de velizy-->
+    <img class="logo_bannière" src="photos/photo_bannière.PNG" alt="Logo bannière de l'iut de Velizy" />
+
+    <div class="barre">
+       
+    </div>   
+    <nav class="nav_bar"> <!-- Bar de naviguation du site-->
+    
+        <ul>
+            <li><a href="index_page_principal.html">Accueil</a></li>
+            <li><a href="index_page_planning.html">Planning</a></li>
+            <li><a href="index_page_risques.html">Risques</a></li>
+        </ul>
+    </nav>
+
+    <img class="menu_button" src="photos/menu_boutton.png" alt="Logo bannière de l'iut de Velizy" /> <!-- logo de la bar de naviguation pour les mobiles-->
+
+</header>
+
+<main>
+    
+    <h1 class="titre_mermoz">Batiment Bastié</h1>
+    <div class="conteneur_tableau">
+    <table class="content_table_bastié">            <!-- Tableau rénovation batiment mermoz-->
+        <thead>
+          <tr>
+            <th>isolation</th>
+            <th>Mobilité</th>
+            <th>Internet</th>
+            <th>Matériel</th>
+            <th>Estétique</th>
+            <th>Enérgie/Ecologie</th>
+            <th>Prix Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Etat actuel</td>
+            <td>Mauvaise isolation due aux fenêtres</td>
+            <td>Moyen</td>
+            <td>Internet inaccessible</td>
+            <td>Bon materiel</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>Proposition</td>
+            <td>-Isoler les fenêtres </td>
+            <td>-Agrandir le bâtiment <br> <br> 
+                - Mettre un ascenseur (notamment pour les étudiant de l’école isty)</td>   
+            <td>-améliorer l’accessibilité à internet </td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>Travaux</td>
+            <td>- Ajout de clim dans toutes les salles.<br> <br> 
+                - Rénovation des fenêtres ( remplacement si nécessaire )</td>
+
+            <td>- Création d’une extension pour les salles de TD <br> <br> 
+                - Création de plusieurs ascenseur (agrandissement des ascenceur)</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+          <tr class="active-row">
+            <td>Prix</td>
+            <td>100K €.</td>
+            <td>200K €</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>300K €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+<div class="conteneur_images">
+    <img src="photos/planning_hall_bastié.png" alt="planning_hall_bastié"> 
+ 
+</div>
+
+
+</main>
+
+<footer>
+
+    
+    <div class="site-footer">
+        <div class="credits">
+            <p>Site créé par Vincent CARRET, Elijah et Blomkum &copy; 2023-2024</p>
+        </div>
+
+</footer>
+
+<script>
+    
+    const menuButton = document.querySelector(".menu_button")
+    const navBar = document.querySelector(".nav_bar") //lorsque l'utilisateur clique sur le boutton du menu pour mobile, ajoute classe mobile-menu lors du clic et supprime lors du deuxième.
+ 
+        menuButton.addEventListener('click',()=>{
+            navBar.classList.toggle('mobile-menu') })
+
+</script>
+
+</body>
+</html>
