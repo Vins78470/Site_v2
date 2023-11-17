@@ -440,7 +440,6 @@ table .content_table_garros {
 table .content_table_ext {
     border-collapse: collapse;
     font-size: 0.9em;
-    min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -527,6 +526,7 @@ footer{
 @media screen and (max-width: 900px) /* Version responsive*/
 {
 
+
     html{
         margin-left: 15px;
        
@@ -550,8 +550,7 @@ footer{
         
     }
 
-
-   
+  
     .bar{
         position: relative;
         width: 800px;
@@ -615,6 +614,11 @@ footer{
         z-index: 1;
      }
      
+                                            /* Tableau en version responsive*/
+     table{
+        
+        transform: scale(0.3);
+     }
      
 }
     
@@ -622,7 +626,6 @@ footer{
 
 @media screen and (min-width: 900px) {
     
-   
 
     .menu_button{
         display: none;      /*On enlève le boutton une fois qu'on repasse en version ordinateur*/
